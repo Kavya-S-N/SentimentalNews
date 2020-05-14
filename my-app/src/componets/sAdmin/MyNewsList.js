@@ -177,7 +177,7 @@ export default class Dashboard extends Component {
                                     <table className="table">
                                         <thead>
                                             <tr>
-                                                <th> Title </th>
+                                                <th>Title </th>
                                                 {/* <th> Phone </th> */}
                                                 <th>Description </th>
 
@@ -200,19 +200,16 @@ export default class Dashboard extends Component {
                                                     </td>
                                                     {/* <td>{user.phone} </td> */}
                                                     <td>
-                                                        <label
-                                                            className="badge text-bg"
-                                                            style={{ fontSize: 14 + "px" }}
-                                                        >
+                                                    
                                                             {news.description}
-                                                        </label>
+                                                    
                                                     </td>
 
                                                     {/* <td> {user.address} </td> */}
                                                     <td className="actions" data-th="">
-                                                        <button className="btn btn-info btn-sm">
+                                                        {/* <button className="btn btn-info btn-sm">
                                                             <i className="fa fa-edit"></i>
-                                                        </button>
+                                                        </button> */}
                                                         <a className="btn btn-danger btn-sm"
                                                             onClick={(e) => this.onDeleteUser(news._id, e)}
 
