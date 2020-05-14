@@ -38,7 +38,7 @@ export default class Readmore extends Component {
                 <div className="col-md-4 stretch-card mt-4">
                     <div className="card bg-gradient-danger card-img-holder text-white">
                         <div className="card-body">
-                         <h4 className="font-weight-normal mb-4">Admin Blog</h4>
+                         <h4 className="font-weight-normal mb-4 pt-3 pb-3 pl-2" style={{borderStyle: 'solid',borderColor: 'white'}}>Admin Blog</h4>
                             {this.state.publics.map((news) => (
                            <div>
                            <h4 >{news.title}</h4>
