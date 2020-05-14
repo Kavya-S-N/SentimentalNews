@@ -35,22 +35,23 @@ export default class Readmore extends Component {
         <center>
             <div className="row mb-5">
                 <div className="col-md-8 stretch-card grid-margin ">
-                    <div className="card bg-gradient-danger card-img-holder text-white">
+                    <div className="card card-img-holder">
                         <div className="card-body">
                             <h4 className="font-weight-normal mb-3"></h4>
                                 
                   {/* <i className="mdi mdi-chart-line mdi-24px float-right"></i> */}
                             
-                            
+                            <div style={{borderStyle: 'solid',borderColor: 'blue'}}>
                              <h3 className="pt-2">Type of News: {this.state.type}</h3>
                              <h4> Sentiment Score:{this.state.score}</h4>
+                             </div>
                             <h3 className="mb-5 pt-5">{this.state.dynamicData}</h3>
                             <img
                                 src={this.state.urlToImage}
                                 alt="image"
                                  width="50%"
                                  height="50%"/>
-                            <h5 className="card-text">{this.state.description}</h5>
+                            <h5 className="card-text mt-3">{this.state.description}</h5>
                         </div>
                     </div>
                 </div>
