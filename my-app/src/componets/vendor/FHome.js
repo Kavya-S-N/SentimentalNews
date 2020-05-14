@@ -105,7 +105,8 @@ class FHome extends Component {
                 
                   <input
                     type="submit"
-                    value="Click Here"
+                    className="btn btn-info btn-sm"
+                    value="Read More"
                     onClick={(e) => this.findSentiment(dynamicData.title, dynamicData.urlToImage, dynamicData.description, e)}
                   ></input>
                 
